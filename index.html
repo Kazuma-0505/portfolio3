@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6a803876f1.js" crossorigin="anonymous"></script>    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <span href="#" class="logo"></span>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="toggle"></div>
+        </nav>
+
+        <div class="text-container">
+            <p>こんにちは</p>
+            <p>花田一真と申します</p>
+            <p>Webエンジニア&デザイナーです</p>
+            <button class="hire-btn">仕事を依頼する</button>
+        </div>
+        <img src="images/8AABEFEB-B951-44D2-8B97-C9398AA4F8BB.png" class="model" alt="">
+    </section>
+
+    <div class="about-container">
+        <img src="images/IMG_4993.jpeg" class="profile-img" alt="">
+        <div class="about-text">
+            <p>About</p>
+            <p>Webエンジニア</p>
+            <p>こんにちは。ポートフォリオを閲覧してくださってありがとうございます。お客様とコミュニケーションを大切にし、納得のいくデザイン、webサイトをお届けいたします。<br>
+                
+                <span>「また、一緒にお仕事をしたい」</span> <br>
+                
+                そう思っていただけるwebエンジニアを目指しています。
+            </p>
+            <button>Contact Me</button>
+        </div>
+    </div>
+
+    <div class="service">
+        <p>Service</p>    
+        <div class="box-container">
+            <div class="box-1">
+                <p>コーディング</p>
+                <img src="images/プログラムアイコン.png" alt="">
+                <p>googleのスタイルガイドに則ったseo対策をしたコーディング、さらにはスマホのレスポンシブ化もお任せください。</p>
+            </div>
+            <div class="box-2">
+                <p>バナー・名刺</p>
+                <img src="images/名刺・会員証のアイコン素材.png" alt="">
+                <p>会社や個人の名刺から、サイトやSNSに掲載するバナーまでAiやPsでお作りいたします。お気軽にご相談ください。</p>
+            </div>
+            <div class="box-3">
+                <p>Wordpress制作</p>
+                <img src="images/ワードプレスのアイコン.png" alt="">
+                <p>wordpressを使用した素早いサイト制作、さらにお客様にあった最適なテーマをご提案させていただきます。</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="work">
+        <p>Work</p>    
+        <div class="box-container">
+            <div class="work-box4">
+                <div class="box-4">
+                    <a href="https://flamboyant-wescoff-fdf650.netlify.app"><img src="images/サムネイル.png" alt=""></a>
+                </div>
+                <p>@samuraibrassの作成したデザインカンプからコーディングしております。(jquery,Javascriptもコーディング済みです。)</p>  
+            </div>
+            <div class="work-box5">
+                <div class="box-5">
+                    <a href="https://www.instagram.com/hana__design0505/"><img src="images/アートボード 1@4x.png" alt=""></a>
+                </div> 
+                <p>Instagramに掲載しているデザインのPortfolioです。これからお客様からのご依頼や、自主制作を進めて投稿を増やしていく予定です。</p>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <p>Contact</p>
+        <form class="contact-box"> 
+            <div class="form-item">
+                <label  for="name">お名前</label>
+                <span>必須</span>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-item">
+                <label for="mail">メールアドレス</label>
+                <span>必須</span>
+                <input type="email" id="mail" name="mail">
+            </div>
+            <div class="form-item">
+                <label for="name">お問い合わせ内容</label>
+                <textarea id="content"></textarea>
+            </div>
+            <button>               
+                    <a>送信する</a>
+             </button>
+        </form>              
+    </div>
+    <script type="text/javascript" src="scripts/jQuery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.toggle').click(function(){
+                    $('.toggle').toggleClass('active')
+                    $('nav').toggleClass('active')
+                })
+            })
+        </script>
+</body>
+</html>
