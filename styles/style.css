@@ -367,7 +367,7 @@ button:active {
         width: 300px;
     }
     .text-container p:nth-child(2) {
-        line-height: 30px;
+        line-height: 45px;
         font-size: 45px;
         width: 100%;
     }
